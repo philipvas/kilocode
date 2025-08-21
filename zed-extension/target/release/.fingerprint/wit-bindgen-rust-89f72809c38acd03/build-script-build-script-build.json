@@ -1,0 +1,20 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[]",
+	"declared_features": "[\"clap\"]",
+	"target": 5408242616063297496,
+	"profile": 1369601567987815722,
+	"path": 13551231072043549829,
+	"deps": [],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "release/.fingerprint/wit-bindgen-rust-89f72809c38acd03/dep-build-script-build-script-build",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}

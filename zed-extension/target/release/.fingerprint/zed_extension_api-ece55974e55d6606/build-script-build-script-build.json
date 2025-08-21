@@ -1,0 +1,20 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[]",
+	"declared_features": "[]",
+	"target": 5408242616063297496,
+	"profile": 2037280523133304864,
+	"path": 15305672088426236260,
+	"deps": [],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "release/.fingerprint/zed_extension_api-ece55974e55d6606/dep-build-script-build-script-build",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}

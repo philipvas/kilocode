@@ -1,0 +1,25 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[\"default\", \"getrandom\"]",
+	"declared_features": "[\"default\", \"getrandom\", \"nightly\", \"unstable-windows-keep-open-tempfile\"]",
+	"target": 44311651032485388,
+	"profile": 2040997289075261528,
+	"path": 13705596501107327450,
+	"deps": [
+		[3331586631144870129, "getrandom", false, 9928490494396170583],
+		[3722963349756955755, "once_cell", false, 9752232197517069892],
+		[10004434995811528692, "rustix", false, 8845260111406983000],
+		[12285238697122577036, "fastrand", false, 10781736537218430669]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "release/.fingerprint/tempfile-c99351591637c178/dep-lib-tempfile",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}

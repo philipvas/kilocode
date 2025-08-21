@@ -1,0 +1,10 @@
+/Users/philipvasilevski/kilocode/zed-extension/target/release/deps/wit_bindgen_core-2c7c26aff4b4d123.d: /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/lib.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/abi.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/ns.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/source.rs
+
+/Users/philipvasilevski/kilocode/zed-extension/target/release/deps/libwit_bindgen_core-2c7c26aff4b4d123.rlib: /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/lib.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/abi.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/ns.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/source.rs
+
+/Users/philipvasilevski/kilocode/zed-extension/target/release/deps/libwit_bindgen_core-2c7c26aff4b4d123.rmeta: /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/lib.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/abi.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/ns.rs /Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/source.rs
+
+/Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/lib.rs:
+/Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/abi.rs:
+/Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/ns.rs:
+/Users/philipvasilevski/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wit-bindgen-core-0.22.0/src/source.rs:

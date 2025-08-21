@@ -1,0 +1,24 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[\"default\", \"macros\", \"realloc\"]",
+	"declared_features": "[\"default\", \"macros\", \"realloc\"]",
+	"target": 12168205304882181921,
+	"profile": 2040997289075261528,
+	"path": 10207847903429809441,
+	"deps": [
+		[1721130114210341834, "wit_bindgen_rt", false, 13817154504344397781],
+		[9804395174584905611, "bitflags", false, 7229487014804586303],
+		[10650163351879981428, "wit_bindgen_rust_macro", false, 1182283856837279148]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "release/.fingerprint/wit-bindgen-ad2e7e71ac68523e/dep-lib-wit_bindgen",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}

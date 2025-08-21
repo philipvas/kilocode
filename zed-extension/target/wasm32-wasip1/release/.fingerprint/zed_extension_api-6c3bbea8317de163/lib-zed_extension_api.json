@@ -1,0 +1,25 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[]",
+	"declared_features": "[]",
+	"target": 5367349392121957993,
+	"profile": 2504610275520212712,
+	"path": 5015911675968547925,
+	"deps": [
+		[2703052750280945125, "build_script_build", false, 3764580192007376690],
+		[4352886507220678900, "serde_json", false, 6089648321791770621],
+		[9689903380558560274, "serde", false, 4320078138596597069],
+		[15178470120881629469, "wit_bindgen", false, 12123558283323973176]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "wasm32-wasip1/release/.fingerprint/zed_extension_api-6c3bbea8317de163/dep-lib-zed_extension_api",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 4516028974012260856
+}

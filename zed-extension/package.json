@@ -1,0 +1,14 @@
+{
+	"name": "@kilocode/zed-extension",
+	"version": "0.1.0",
+	"description": "Zed extension for Kilocode AI Assistant",
+	"scripts": {
+		"build:sidecar": "cd ../services/zed-bridge && npm install && npm run build",
+		"build:rust": "cargo build --release",
+		"build": "npm run build:sidecar && npm run build:rust && npm run package",
+		"package": "mkdir -p dist && cp ../services/zed-bridge/dist/server.js dist/ && echo 'Package ready!'",
+		"dev:sidecar": "cd ../services/zed-bridge && npm run dev",
+		"clean": "rm -rf dist target package"
+	},
+	"devDependencies": {}
+}

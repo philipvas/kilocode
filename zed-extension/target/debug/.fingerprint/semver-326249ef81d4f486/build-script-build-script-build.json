@@ -1,0 +1,20 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[\"default\", \"std\"]",
+	"declared_features": "[\"default\", \"serde\", \"std\"]",
+	"target": 17883862002600103897,
+	"profile": 5347358027863023418,
+	"path": 8384322226034521984,
+	"deps": [],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/semver-326249ef81d4f486/dep-build-script-build-script-build",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}

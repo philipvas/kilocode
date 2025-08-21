@@ -1,0 +1,20 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[]",
+	"declared_features": "[\"no-panic\", \"small\"]",
+	"target": 8955674961151483972,
+	"profile": 15657897354478470176,
+	"path": 14536950653763433762,
+	"deps": [],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "wasm32-wasip2/debug/.fingerprint/ryu-b66351427b7ef7c6/dep-lib-ryu",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 10173256442760655176
+}

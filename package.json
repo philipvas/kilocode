@@ -27,7 +27,11 @@
 		"evals": "dotenvx run -f packages/evals/.env.development packages/evals/.env.local -- docker compose -f packages/evals/docker-compose.yml --profile server --profile runner up --build --scale runner=0",
 		"playwright": "turbo playwright",
 		"link-workspace-packages": "node scripts/link-packages.js",
-		"unlink-workspace-packages": "node scripts/link-packages.js --unlink"
+		"unlink-workspace-packages": "node scripts/link-packages.js --unlink",
+		"zed:install": "cd services/zed-bridge && npm install && cd ../../zed-extension && npm install",
+		"zed:build": "cd zed-extension && npm run build",
+		"zed:dev": "cd services/zed-bridge && npm run dev",
+		"zed:clean": "cd zed-extension && npm run clean && cd ../services/zed-bridge && rm -rf node_modules dist"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.5.1",

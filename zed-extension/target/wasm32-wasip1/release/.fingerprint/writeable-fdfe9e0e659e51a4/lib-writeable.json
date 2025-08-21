@@ -1,0 +1,20 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[]",
+	"declared_features": "[\"either\"]",
+	"target": 6209224040855486982,
+	"profile": 2040997289075261528,
+	"path": 3243682756704980428,
+	"deps": [],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "wasm32-wasip1/release/.fingerprint/writeable-fdfe9e0e659e51a4/dep-lib-writeable",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 4516028974012260856
+}

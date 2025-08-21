@@ -1,0 +1,31 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[\"decoding\", \"default\", \"serde\", \"serde_json\"]",
+	"declared_features": "[\"decoding\", \"default\", \"serde\", \"serde_json\", \"wat\"]",
+	"target": 10333609573450994617,
+	"profile": 17293367935461867070,
+	"path": 8636437415721400369,
+	"deps": [
+		[4352886507220678900, "serde_json", false, 17748427647794996386],
+		[4899080583175475170, "semver", false, 4454849853349599499],
+		[5986029879202738730, "log", false, 13408550641348303111],
+		[6493259146304816786, "indexmap", false, 15595674390089858635],
+		[6886539428155681757, "wasmparser", false, 13557409134595317396],
+		[9689903380558560274, "serde", false, 17087929380886857486],
+		[11207653606310558077, "anyhow", false, 11936049017533455484],
+		[16126285161989458480, "unicode_xid", false, 8808467585542806829],
+		[16257276029081467297, "serde_derive", false, 10972538859893953218],
+		[18181980795667692292, "id_arena", false, 383778233081066520]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/wit-parser-df86a36e4c1aabbe/dep-lib-wit_parser",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}

@@ -1,0 +1,23 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[\"net\", \"os-ext\", \"os-poll\"]",
+	"declared_features": "[\"default\", \"log\", \"net\", \"os-ext\", \"os-poll\"]",
+	"target": 5157902839847266895,
+	"profile": 13712647568182654241,
+	"path": 8629167393640293106,
+	"deps": [
+		[4509781548638539089, "wasi", false, 15175787084689999486],
+		[11887305395906501191, "libc", false, 1977076572590157636]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "wasm32-wasip1/release/.fingerprint/mio-345b811322c2d884/dep-lib-mio",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 4516028974012260856
+}

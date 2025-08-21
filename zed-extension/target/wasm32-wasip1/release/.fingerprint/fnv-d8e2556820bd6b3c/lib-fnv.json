@@ -1,0 +1,20 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[\"default\", \"std\"]",
+	"declared_features": "[\"default\", \"std\"]",
+	"target": 10248144769085601448,
+	"profile": 2040997289075261528,
+	"path": 5047464855442426802,
+	"deps": [],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "wasm32-wasip1/release/.fingerprint/fnv-d8e2556820bd6b3c/dep-lib-fnv",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 4516028974012260856
+}

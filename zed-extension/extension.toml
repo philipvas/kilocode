@@ -1,0 +1,10 @@
+id = "kilocode"
+name = "Kilocode AI Assistant"
+description = "AI-powered coding assistant with multiple model support"
+version = "0.1.0"
+schema_version = 1
+authors = ["philipvas"]
+repository = "https://github.com/philipvas/kilocode"
+
+[language_servers.kilocode]
+name = "Kilocode AI Assistant"

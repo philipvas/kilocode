@@ -1,0 +1,23 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[]",
+	"declared_features": "[]",
+	"target": 6105580387070874529,
+	"profile": 5347358027863023418,
+	"path": 11710916353081284992,
+	"deps": [
+		[10735201298529710322, "wit_parser", false, 17544838172357864886],
+		[11207653606310558077, "anyhow", false, 11936049017533455484]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "debug/.fingerprint/wit-bindgen-core-584673186ab251be/dep-lib-wit_bindgen_core",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}

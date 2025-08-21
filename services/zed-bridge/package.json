@@ -1,0 +1,33 @@
+{
+	"name": "@kilocode/zed-bridge",
+	"version": "1.0.0",
+	"description": "Minimal HTTP bridge for Zed extension to use Kilocode providers",
+	"main": "dist/server.js",
+	"scripts": {
+		"dev": "tsx watch server-simple.ts",
+		"dev:full": "tsx watch server.ts",
+		"dev:kilocode": "tsx watch server-kilocode.ts",
+		"dev:enhanced": "tsx watch server-enhanced.ts",
+		"build": "esbuild server-simple.ts --bundle --platform=node --outfile=dist/server.js --external:vscode --external:canvas --external:jsdom --external:@google-cloud/vertexai --external:@aws-sdk/* --minify",
+		"build:full": "esbuild server.ts --bundle --platform=node --outfile=dist/server-full.js --external:vscode --external:canvas --external:jsdom --external:@google-cloud/vertexai --external:@aws-sdk/* --minify",
+		"build:kilocode": "esbuild server-kilocode.ts --bundle --platform=node --outfile=dist/server-kilocode.js --external:openai --minify",
+		"build:enhanced": "esbuild server-enhanced.ts --bundle --platform=node --outfile=dist/server-enhanced.js --external:openai --external:diff --minify",
+		"start": "node dist/server.js",
+		"start:kilocode": "node dist/server-kilocode.js",
+		"start:enhanced": "node dist/server-enhanced.js"
+	},
+	"dependencies": {
+		"@types/diff": "^7.0.2",
+		"cors": "^2.8.5",
+		"diff": "^8.0.2",
+		"express": "^4.18.2",
+		"openai": "^5.13.1"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^4.17.21",
+		"@types/node": "^20.11.0",
+		"esbuild": "^0.19.11",
+		"tsx": "^4.7.0"
+	}
+}

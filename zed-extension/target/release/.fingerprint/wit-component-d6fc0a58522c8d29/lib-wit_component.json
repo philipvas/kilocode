@@ -1,0 +1,32 @@
+{
+	"rustc": 17575471286409424799,
+	"features": "[]",
+	"declared_features": "[\"dummy-module\", \"semver-check\", \"wat\"]",
+	"target": 2660503241821765718,
+	"profile": 14094699703578427699,
+	"path": 4870972473776822148,
+	"deps": [
+		[4352886507220678900, "serde_json", false, 14502035507482360961],
+		[5986029879202738730, "log", false, 16750267229457737963],
+		[6493259146304816786, "indexmap", false, 16850976664057079748],
+		[6886539428155681757, "wasmparser", false, 593646004633495110],
+		[9689903380558560274, "serde", false, 7708470179268561305],
+		[9804395174584905611, "bitflags", false, 9683027611716584468],
+		[10735201298529710322, "wit_parser", false, 6818062627403585232],
+		[10962985842462262179, "wasm_encoder", false, 184669933972040732],
+		[11207653606310558077, "anyhow", false, 15404985810272918673],
+		[11663327112992199751, "wasm_metadata", false, 6355337412791715726],
+		[16257276029081467297, "serde_derive", false, 2087961097906252661]
+	],
+	"local": [
+		{
+			"CheckDepInfo": {
+				"dep_info": "release/.fingerprint/wit-component-d6fc0a58522c8d29/dep-lib-wit_component",
+				"checksum": false
+			}
+		}
+	],
+	"rustflags": [],
+	"config": 2069994364910194474,
+	"compile_kind": 0
+}
