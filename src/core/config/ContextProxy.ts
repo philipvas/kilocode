@@ -142,6 +142,9 @@ export class ContextProxy {
 			return this.originalContext.globalState.update(key, value)
 		}
 
+		// Capture prior value before we update cache (used for small-key change detection)
+		const prev = (this.stateCache as any)[key]
+
 		// update in-memory cache
 		this.stateCache[key] = value
 

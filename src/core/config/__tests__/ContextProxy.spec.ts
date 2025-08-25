@@ -4,7 +4,12 @@ import * as vscode from "vscode"
 
 import { GLOBAL_STATE_KEYS, SECRET_STATE_KEYS } from "@roo-code/types"
 
-import { ContextProxy } from "../ContextProxy"
+// Mock fs/promises early so we can control mkdir/appendFile behavior in tests.
+// Vitest cannot spy on ESM namespace exports at runtime, so we provide a mock implementation.
+vi.mock("fs/promises", () => ({
+	mkdir: vi.fn(),
+	appendFile: vi.fn(),
+}))
 
 vi.mock("vscode", () => ({
 	Uri: {
@@ -16,6 +21,8 @@ vi.mock("vscode", () => ({
 		Test: 3,
 	},
 }))
+
+import { ContextProxy } from "../ContextProxy"
 
 describe("ContextProxy", () => {
 	let proxy: ContextProxy
