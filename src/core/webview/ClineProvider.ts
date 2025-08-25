@@ -2113,6 +2113,9 @@ export class ClineProvider
 		}
 	}
 
+	// Coalescing fields to batch full taskHistory updates and avoid frequent large writes
+	private taskHistoryTimer?: NodeJS.Timeout
+	private pendingTaskHistory?: HistoryItem[]
 	async updateTaskHistory(item: HistoryItem): Promise<HistoryItem[]> {
 		const history = (this.getGlobalState("taskHistory") as HistoryItem[] | undefined) || []
 		const existingItemIndex = history.findIndex((h) => h.id === item.id)
@@ -2123,7 +2126,53 @@ export class ClineProvider
 			history.push(item)
 		}
 
-		await this.updateGlobalState("taskHistory", history)
+		// Write per-task metadata to disk (delta) to avoid repeated full 1.7MB globalState saves.
+		// This is a best-effort non-blocking write — update in-memory state immediately and persist task metadata.
+		try {
+			const globalStoragePath = this.contextProxy.globalStorageUri.fsPath
+			const { getTaskDirectoryPath } = await import("../../utils/storage")
+			const taskDir = await getTaskDirectoryPath(globalStoragePath, item.id)
+			const fs = await import("fs/promises")
+			const path = await import("path")
+			const metaPath = path.join(taskDir, "task_metadata.json")
+			await fs.mkdir(taskDir, { recursive: true })
+			// Write only the single task metadata (delta) instead of the whole taskHistory blob
+			await fs.writeFile(metaPath, JSON.stringify(item, null, 2), "utf8")
+		} catch (err) {
+			// Log but don't fail the update
+			this.log(
+				`Failed to write per-task metadata for ${item.id}: ${err instanceof Error ? err.message : String(err)}`,
+			)
+		}
+
+		// Keep the in-memory/global cached history in sync.
+		// Schedule a coalesced update to avoid writing the full taskHistory on every change.
+		this.pendingTaskHistory = history
+		try {
+			if (this.taskHistoryTimer) {
+				clearTimeout(this.taskHistoryTimer)
+			}
+			// Flush after 5s of quiescence (matches ContextProxy LARGE_STATE_WRITE_DELAY_MS)
+			this.taskHistoryTimer = setTimeout(async () => {
+				try {
+					if (this.pendingTaskHistory) {
+						await this.updateGlobalState("taskHistory", this.pendingTaskHistory)
+					}
+				} catch (err) {
+					console.error("Failed to flush taskHistory:", err)
+				} finally {
+					this.pendingTaskHistory = undefined
+					this.taskHistoryTimer = undefined
+				}
+			}, 5000)
+		} catch (err) {
+			// Fallback: attempt immediate write if scheduling fails
+			try {
+				await this.updateGlobalState("taskHistory", history)
+			} catch (e) {
+				console.error("Failed to write taskHistory fallback:", e)
+			}
+		}
 		return history
 	}
 
