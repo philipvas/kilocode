@@ -400,6 +400,10 @@
 			"description": "Není vyžadován žádný klíč API, ale uživatel musí pomoci zkopírovat a vložit informace do webového chatu AI.",
 			"instructions": "Během používání se zobrazí dialogové okno a aktuální zpráva se automaticky zkopíruje do schránky. Musíte je vložit do webových verzí AI (například ChatGPT nebo Claude), poté zkopírovat odpověď AI zpět do dialogového okna a kliknout na tlačítko potvrdit."
 		},
+		"roo": {
+			"authenticatedMessage": "Bezpečně autentizováno prostřednictvím vašeho účtu Roo Code Cloud.",
+			"connectButton": "Připojit se k Roo Code Cloud"
+		},
 		"openRouter": {
 			"providerRouting": {
 				"title": "Směrování poskytovatele OpenRouter",
@@ -794,10 +798,9 @@
 		},
 		"MORPH_FAST_APPLY": {
 			"name": "Povolit Morph Fast Apply",
-			"description": "Pokud je povoleno, Kilo Code může upravovat soubory pomocí Morph Fast Apply.",
+			"description": "Pokud je povoleno, Kilo Code může upravovat soubory pomocí Morph Fast Apply. Vyžaduje poskytovatele Kilo Code API, OpenRouter nebo klíč API Morph.",
 			"apiKey": "Klíč API Morph (volitelné)",
-			"placeholder": "Zadejte svůj klíč API Morph (volitelné)",
-			"warning": "Pokud nenakonfigurujete klíč API Morph, můžete stále používat Fast Apply s Kilo Code nebo OpenRouter. Váš účet bude účtován za použití modelu, což se aktuálně nezobrazuje v uživatelském rozhraní rozšíření."
+			"placeholder": "Zadejte svůj klíč API Morph (volitelné)"
 		},
 		"INLINE_ASSIST": {
 			"name": "Inline pomoc",

@@ -385,6 +385,10 @@
 			"description": "Não é necessária chave de API, mas o usuário precisa ajudar a copiar e colar as informações para a IA do chat web.",
 			"instructions": "Durante o uso, uma caixa de diálogo será exibida e a mensagem atual será copiada para a área de transferência automaticamente. Você precisa colar isso nas versões web de IA (como ChatGPT ou Claude), depois copiar a resposta da IA de volta para a caixa de diálogo e clicar no botão confirmar."
 		},
+		"roo": {
+			"authenticatedMessage": "Autenticado com segurança através da sua conta Roo Code Cloud.",
+			"connectButton": "Conectar ao Roo Code Cloud"
+		},
 		"openRouter": {
 			"providerRouting": {
 				"title": "Roteamento de Provedores OpenRouter",
@@ -739,10 +743,9 @@
 		},
 		"MORPH_FAST_APPLY": {
 			"name": "Habilitar Morph Fast Apply",
-			"description": "Quando habilitado, o Kilo Code pode editar arquivos usando Morph Fast Apply.",
+			"description": "Quando habilitado, o Kilo Code pode editar arquivos usando Morph Fast Apply. Requer o Provedor de API Kilo Code, OpenRouter ou uma chave de API Morph.",
 			"apiKey": "Chave de API Morph (opcional)",
-			"placeholder": "Digite sua chave de API Morph (opcional)",
-			"warning": "Se você não configurar uma chave de API Morph, ainda poderá usar Fast Apply com Kilo Code ou OpenRouter. Sua conta será cobrada pelo uso do modelo, isso atualmente não é mostrado na interface da extensão."
+			"placeholder": "Digite sua chave de API Morph (opcional)"
 		},
 		"INLINE_ASSIST": {
 			"name": "Assistência em Linha",

@@ -133,6 +133,8 @@ export const globalSettingsSchema = z.object({
 	fuzzyMatchThreshold: z.number().optional(),
 	experiments: experimentsSchema.optional(),
 
+	morphApiKey: z.string().optional(), // kilocode_change: Morph fast apply
+
 	codebaseIndexModels: codebaseIndexModelsSchema.optional(),
 	codebaseIndexConfig: codebaseIndexConfigSchema.optional(),
 
@@ -192,6 +194,7 @@ export const SECRET_STATE_KEYS = [
 	"openAiNativeApiKey",
 	"cerebrasApiKey",
 	"deepSeekApiKey",
+	"doubaoApiKey",
 	"moonshotApiKey",
 	"mistralApiKey",
 	"unboundApiKey",
@@ -210,6 +213,7 @@ export const SECRET_STATE_KEYS = [
 	"codebaseIndexMistralApiKey",
 	"huggingFaceApiKey",
 	"sambaNovaApiKey",
+	"zaiApiKey",
 	"fireworksApiKey",
 	"ioIntelligenceApiKey",
 ] as const satisfies readonly (keyof ProviderSettings)[]

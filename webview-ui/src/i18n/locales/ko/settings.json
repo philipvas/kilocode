@@ -385,6 +385,10 @@
 			"description": "API 키가 필요하지 않지만, 사용자가 웹 채팅 AI에 정보를 복사하여 붙여넣어야 합니다.",
 			"instructions": "사용 중에 대화 상자가 나타나고 현재 메시지가 자동으로 클립보드에 복사됩니다. 이를 웹 버전 AI(예: ChatGPT 또는 Claude)에 붙여넣은 다음, AI의 응답을 대화 상자에 복사하고 확인 버튼을 클릭해야 합니다."
 		},
+		"roo": {
+			"authenticatedMessage": "Roo Code Cloud 계정을 통해 안전하게 인증되었습니다.",
+			"connectButton": "Roo Code Cloud에 연결"
+		},
 		"openRouter": {
 			"providerRouting": {
 				"title": "OpenRouter 제공자 라우팅",
@@ -739,10 +743,9 @@
 		},
 		"MORPH_FAST_APPLY": {
 			"name": "Morph Fast Apply 활성화",
-			"description": "활성화하면 Kilo Code가 Morph Fast Apply를 사용하여 파일을 편집할 수 있습니다.",
+			"description": "활성화하면 Kilo Code가 Morph Fast Apply를 사용하여 파일을 편집할 수 있습니다. Kilo Code API 제공자, OpenRouter 또는 Morph API 키가 필요합니다.",
 			"apiKey": "Morph API 키 (선택사항)",
-			"placeholder": "Morph API 키를 입력하세요 (선택사항)",
-			"warning": "Morph API 키를 구성하지 않으면 Kilo Code 또는 OpenRouter로 Fast Apply를 계속 사용할 수 있습니다. 계정에 모델 사용량에 대한 요금이 청구되며, 이는 현재 확장 프로그램 UI에 표시되지 않습니다."
+			"placeholder": "Morph API 키를 입력하세요 (선택사항)"
 		},
 		"INLINE_ASSIST": {
 			"name": "인라인 어시스트",
